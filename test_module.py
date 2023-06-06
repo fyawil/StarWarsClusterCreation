@@ -1,14 +1,9 @@
 import unittest
-import requests
 import pymongo
-from bson import DBRef
 
 from index import (
     get_starships,
     connect_to_db,
-    get_pilot_ref,
-    replace_api_urls_with_db_ref,
-    create_cluster_in_db
 )
 
 class StarshipsTestCase(unittest.TestCase):
